@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Job Prompt",
+  "version": "1.0.1",
+  "description": "The Job Prompt extension helps you discover the right keywords for your job description and enhances your resume for better opportunities.",
+  "permissions": ["tabs"],
+  "icons": {
+    "16": "icons16.png",
+    "32": "icons32.png",
+    "48": "icons48.png",
+    "128": "icons128.png"
+  },
+
+  "action": { 
+  "default_popup": "popup.html", 
+   "default_title":"CVG Prompt"  },
+
+
+
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }
+]
+}
